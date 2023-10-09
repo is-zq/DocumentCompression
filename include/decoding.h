@@ -6,7 +6,7 @@ using namespace std;
 
 class DeCode
 {
-	friend class UnZip;
+	friend class UnQZip;
 private:
 	HuffTree tree_;
 	string src_file_;
