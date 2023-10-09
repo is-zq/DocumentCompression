@@ -1,11 +1,11 @@
-﻿#include"zip.h"
+﻿#include"qzip.h"
 using namespace std;
 
-Zip::Zip(const string& src_file)
+QZip::QZip(const string& src_file)
 	:encode_(src_file)
 {}
 
-void Zip::ZipFile(const string& dest_path)
+void QZip::QZipFile(const string& dest_path)
 {
 	//将编码组合成8位的位运算,最后编码不足8位填0即可
 	//循环读取源文件字节，找到huff_code，凑齐8位写入dest_path文件中
