@@ -11,6 +11,6 @@ class UnZip
 private:
 	DeCode decode_;
 public:
-	UnZip(const string& src_file);
-	void UnZipFile(const string& dst_path);
+	UnQZip(const string& src_file);
+	void UnQZipFile(const string& dst_path);
 };
