@@ -5,11 +5,11 @@
 #include"encoding.h"
 using namespace std;
 
-class Zip
+class QZip
 {
 private:
 	EnCode encode_;
 public:
-	Zip(const string& src_file);
-	void ZipFile(const string& dest_path);
+	QZip(const string& src_file);
+	void QZipFile(const string& dest_path);
 };
