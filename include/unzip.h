@@ -6,7 +6,7 @@
 using namespace std;
 
 
-class UnZip
+class UnQZip
 {
 private:
 	DeCode decode_;
