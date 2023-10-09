@@ -2,9 +2,9 @@
 #include"charactor.h"
 #include"huff_tree.h"
 #include"encoding.h"
-#include"zip.h"
+#include"qzip.h"
 #include"decoding.h"
-#include"unzip.h"
+#include"unqzip.h"
 using namespace std;
 
 void print_main_menu()
@@ -56,8 +56,8 @@ int main()
 	    				    cin >> dest_file_name;
 	    			}
 	    			cout << "compressing,please wait...\n";
-	    			Zip user(src_file_name);
-	    			user.ZipFile(dest_file_name);
+	    			QZip user(src_file_name);
+	    			user.QZipFile(dest_file_name);
 	    			cout << "success!\n 0.return to menu 1.continue to compress\n";
 	    			int choose = 0;
 	    			cin >> choose;
@@ -102,10 +102,10 @@ int main()
                             break;
                         else
 	    	    		    cin >> dest_file_name;
-                    }
+                    	}
 	    	    	cout << "decompressing,please wait...\n";
-	    	    	UnZip user(src_file_name);
-	    	    	user.UnZipFile(dest_file_name);
+	    	    	UnQZip user(src_file_name);
+	    	    	user.UnQZipFile(dest_file_name);
 	    	    	cout << "success!\n 0.return to the menu 1.continue to decompress\n";
 	    	    	int choose = 0;
 	    	    	cin >> choose;
