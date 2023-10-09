@@ -1,10 +1,10 @@
-﻿#include"unzip.h"
+﻿#include"unqzip.h"
 using namespace std;
 
-UnZip::UnZip(const string& src_file)
+UnQZip::UnQZip(const string& src_file)
 	:decode_(src_file)
 {}
-void UnZip::UnZipFile(const string& dest_path)
+void UnQZip::UnQZipFile(const string& dest_path)
 {
 
 	ifstream ifs_src(decode_.src_file_, ios::in | ios::binary);//打开压缩文件
