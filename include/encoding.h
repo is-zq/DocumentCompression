@@ -6,7 +6,7 @@ using namespace std;
 
 class EnCode
 {
-	friend class Zip;
+	friend class QZip;
 private:
 	HuffTree tree_;
 	string src_file_;
