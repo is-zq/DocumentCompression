@@ -30,8 +30,8 @@ using HT_ptr = HTNode*;
 
 class HuffTree
 {
-	friend class Zip;
-	friend class UnZip;
+	friend class QZip;
+	friend class UnQZip;
 private:
 	HT_ptr root_ = nullptr;
 public:
